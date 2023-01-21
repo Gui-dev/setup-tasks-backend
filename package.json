@@ -15,6 +15,7 @@
     "prisma": "^4.9.0"
   },
   "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^9.3.0",
     "@prisma/client": "^4.9.0",
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
@@ -24,6 +25,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
+    "prisma-erd-generator": "^1.2.5",
     "tsx": "^3.12.2",
     "typescript": "^4.9.4"
   }
