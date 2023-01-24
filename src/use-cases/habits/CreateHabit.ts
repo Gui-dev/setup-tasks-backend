@@ -10,7 +10,6 @@ interface ICreateHabit {
 export class CreateHabit {
   public async execute ({ title, weekDays }: ICreateHabit) {
     const today = dayjs().startOf('day').toDate()
-    console.log(title, weekDays)
     await prisma.habit.create({
       data: {
         title,
