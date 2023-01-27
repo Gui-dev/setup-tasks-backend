@@ -9,4 +9,5 @@ const dayController = new DayController()
 export const appRoutes = async (app: FastifyInstance) => {
   app.post('/habits', habitController.store)
   app.get('/day', dayController.index)
+  app.patch('/habits/:id/toggle', habitController.update)
 }
