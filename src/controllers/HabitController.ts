@@ -21,7 +21,7 @@ export class HabitController {
       weekDays
     })
 
-    return response.code(201)
+    return response.code(201).send()
   }
 
   public async update (request: FastifyRequest, response: FastifyReply): Promise<FastifyReply> {

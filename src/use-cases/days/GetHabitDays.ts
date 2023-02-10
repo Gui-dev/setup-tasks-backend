@@ -30,9 +30,10 @@ export class GetHabitDays {
       }
     })
 
-    const completedHabits = day?.dayHabits.map(dayHabit => {
+    let completedHabits = day?.dayHabits.map(dayHabit => {
       return dayHabit.habit_id
     })
+    completedHabits = completedHabits && completedHabits.length > 0 ? completedHabits : []
 
     return {
       possibleHabits,
